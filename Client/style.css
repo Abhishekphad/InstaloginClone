@@ -1,0 +1,53 @@
+.container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.username {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.userbio {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.userEmail,
+.follower-count {
+    margin-bottom: 5px;
+}
+
+.userEmail::before,
+.follower-count::before {
+    content: attr(class) ": ";
+    font-weight: bold;
+}
+
+.userEmail,
+.follower-count {
+    color: #666;
+}
+
+.userEmail::before {
+    content: "Email: ";
+}
+
+.follower-count::before {
+    content: "Followers: ";
+}
